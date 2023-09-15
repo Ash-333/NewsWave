@@ -32,7 +32,7 @@ fun NewsItem(newsItem: NewsItem,onClick: (url: String) -> Unit){
         shape = RoundedCornerShape(12.dp),
     ){
         Column(
-            modifier=Modifier.padding(8.dp)
+            modifier=Modifier.padding(12.dp)
         ){
             AsyncImage(
                 model = newsItem.imgUrl ?: "https://shorturl.at/arGVZ",
@@ -40,7 +40,7 @@ fun NewsItem(newsItem: NewsItem,onClick: (url: String) -> Unit){
                 modifier = Modifier
                     .fillMaxWidth()
                     .height(220.dp)
-                    .clip(RoundedCornerShape(12.dp)),
+                    .clip(RoundedCornerShape(8.dp)),
                 contentScale = ContentScale.Crop
             )
             Spacer(modifier = Modifier.height(8.dp))
