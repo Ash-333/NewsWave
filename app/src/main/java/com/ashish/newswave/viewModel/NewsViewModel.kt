@@ -2,7 +2,7 @@ package com.ashish.newswave.viewModel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.ashish.newswave.model.ArticlesItem
+import com.ashish.newswave.model.NewsItem
 import com.ashish.newswave.repository.NewsRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.StateFlow
@@ -11,7 +11,7 @@ import javax.inject.Inject
 
 @HiltViewModel
 class NewsViewModel @Inject constructor(private val newsRepository: NewsRepository) :ViewModel() {
-    val newsItems: StateFlow<List<ArticlesItem?>>
+    val newsItems: StateFlow<List<NewsItem?>>
         get() =newsRepository.newsItem
 
     init {

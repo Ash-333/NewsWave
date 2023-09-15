@@ -18,7 +18,7 @@ object NetworkModule {
     fun provideRetrofit():Retrofit{
 
         return Retrofit.Builder()
-            .baseUrl("https://api.gdeltproject.org/api/v2/doc/")
+            .baseUrl("https://tiny-plum-cormorant-tie.cyclic.cloud/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
     }

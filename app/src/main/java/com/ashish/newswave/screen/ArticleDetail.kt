@@ -8,8 +8,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.viewinterop.AndroidView
 
 @Composable
-fun ArticleDetail() {
-    val url="https://www.onlinekhabar.com/2023/09/1362648"
+fun ArticleDetail(url:String) {
     AndroidView(factory = { context ->
         WebView(context).apply {
             settings.javaScriptEnabled=true
